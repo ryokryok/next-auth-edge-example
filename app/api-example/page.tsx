@@ -2,6 +2,8 @@
 import CustomLink from "@/components/custom-link"
 import { useEffect, useState } from "react"
 
+export const runtime = "edge"
+
 export default function Page() {
   const [data, setData] = useState()
   useEffect(() => {

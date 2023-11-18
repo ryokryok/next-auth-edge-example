@@ -2,6 +2,8 @@ import { auth } from "auth"
 import ClientExample from "@/components/client-example"
 import { SessionProvider } from "next-auth/react"
 
+export const runtime = "edge"
+
 export default async function ClientPage() {
   const session = await auth()
   // TODO: Look into https://react.dev/reference/react/experimental_taintObjectReference

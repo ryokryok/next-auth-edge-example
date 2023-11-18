@@ -9,7 +9,11 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "pages:build": "pnpm next-on-pages",
+    "pages:deploy": "pnpm pages:build && wrangler pages deploy .vercel/output/static",
+    "pages:watch": "pnpm next-on-pages --watch",
+    "pages:dev": "pnpm wrangler pages dev .vercel/output/static --compatibility-date=2023-10-30 --compatibility-flag=nodejs_compat"
   },
   "author": "Iain Collins <me@iaincollins.com>",
   "contributors": [
@@ -35,6 +39,7 @@
     "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
+    "@cloudflare/next-on-pages": "^1.7.3",
     "@types/node": "^18",
     "@types/react": "^18.2.23",
     "@types/react-dom": "^18.2.8",

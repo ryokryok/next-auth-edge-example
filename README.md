@@ -1,3 +1,18 @@
+This is forked repo.
+
+To use the edge runtime, add the following statement to all routes:
+
+```diff
++ export const runtime = "edge"
+```
+
+I planned that deploy in Cloudflare Pages, but cannot do it.
+
+This issue is caused.
+https://github.com/cloudflare/next-on-pages/issues/413
+
+---
+
 > The example repository is maintained from a [monorepo](https://github.com/nextauthjs/next-auth/tree/main/apps/examples/nextjs). Pull Requests should be opened against [`nextauthjs/next-auth`](https://github.com/nextauthjs/next-auth).
 
 <p align="center">

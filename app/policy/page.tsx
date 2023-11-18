@@ -1,3 +1,5 @@
+export const runtime = "edge"
+
 export default function PolicyPage() {
   return (
     <div className="space-y-2">

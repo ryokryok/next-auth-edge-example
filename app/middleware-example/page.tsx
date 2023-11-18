@@ -1,5 +1,7 @@
 import CustomLink from "@/components/custom-link"
 
+export const runtime = "edge"
+
 export default function Page() {
   return (
     <div className="space-y-2">
