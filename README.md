@@ -6,10 +6,9 @@ To use the edge runtime, add the following statement to all routes:
 + export const runtime = "edge"
 ```
 
-I planned that deploy in Cloudflare Pages, but cannot do it.
+I planned that deploy in Cloudflare Pages, but sign in error caused.
 
-This issue is caused.
-https://github.com/cloudflare/next-on-pages/issues/413
+https://next-auth-edge-example.pages.dev/
 
 ---
 
